@@ -17,7 +17,7 @@ function Home() {
   }, [cookies]);
 
   function acceptCookie() {
-    LogRocket.init("ynnbu9/schoolproject");
+    LogRocket.init(process.env.REACT_APP_API_KEY);
 
     let expireDate = new Date();
     expireDate.setTime(expireDate.getTime() + 1 * 3600 * 1000);
